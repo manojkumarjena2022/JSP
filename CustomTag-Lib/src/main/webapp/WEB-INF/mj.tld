@@ -1,0 +1,40 @@
+<!DOCTYPE taglib  
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"  
+    "http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>mj</short-name>
+	<uri>http://manoj.com/mjtags</uri>
+
+	<tag>
+		<name>printLabel</name>
+		<tag-class>com.mj.tags.PrintLabelTag</tag-class>
+		<body-content>EMPTY</body-content>
+	</tag>
+
+	<tag>
+		<name>prime</name>
+		<tag-class>com.mj.tags.PrimeTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>n</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>display</name>
+		<tag-class>com.mj.tags.DisplayTag</tag-class>
+		<body-content>jsp</body-content>
+		<attribute>
+			<name>size</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>font</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+</taglib>
